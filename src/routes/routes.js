@@ -22,6 +22,16 @@ const Routes = () => {
         },
       ],
     },
+    {
+      path: '/',
+      element: <Layout />,
+      children: [
+        {
+          element: <Navigate to="/lsconsultoria/acervovirtual"/>
+        },
+      ]
+
+    }
   ])
 }
 
